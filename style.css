@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1dd1a1;
+  transition: 0.5s;
+}
+
+.login{
+  position:relative;
+  padding: 50px;
+  background: #fff;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  box-shadow: 0 25px 50px  rgba(0, 0, 0, 0.1);
+}
+
+.login h2{
+  font-weight: 500;
+  border-left: 15px solid #1dd1a1;
+  line-height: 1em;
+  padding-left: 10px;
+  transition: 0.5s;
+  color: #333;
+}
+.login .inputBox{
+  position:relative;
+}
+
+.login .inputBox input{
+  position:relative;
+  width: 100%;
+  padding: 10px 15px;
+  outline: none;
+  border: 2px solid #555;
+}
+
+.login .inputBox input#btn{
+  border: none;
+  background:#1dd1a1;
+  transition: 0.5s;
+  font: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
+}
+.login .group{
+  display: flex;
+  justify-content: space-between;
+}
+
+.login .group a {
+  color: #333;
+  text-decoration: none;
+}
+
+.login .group a:nth-child(2) {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.colors{
+  position:absolute;
+  right: 0;
+  padding: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.colors span{
+  position:relative;
+  width: 20px;
+  height: 20px;
+  background: var(--clr);
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.colors span.active{
+  border:2px solid #333;
+  scale:1.5;
+}
